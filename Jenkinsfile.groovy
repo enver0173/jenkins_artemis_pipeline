@@ -15,13 +15,13 @@ node {
 		'dev1.enverguner.com', 
 		'qa1.enverguner.com', 
 		'stage1.enverguner.com', 
-		'prod1.enverguner.com'], 
+		'prod1.acirrustech.com'], 
 	description: 'Please provide an environment to build the application', 
 	name: 'ENVIR')])])
 	stage("Stage1"){
 		timestamps {
 			ws {
-				checkout([$class: 'GitSCM', branches: [[name: '${Version}']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/fuchicorp/artemis.git']]])
+				checkout([$class: 'GitSCM', branches: [[name: '${Version}']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/enver0173/jenkins_artemis_pipeline.git']]])
 		}
 	}
 }
