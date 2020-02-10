@@ -12,7 +12,7 @@ node {
     name: 'Version'), 
     choice(choices: 
     [
-        'dev1.enverguner.com', 
+        'dev1.enverguner.com.', 
         'qa1.enverguner.com', 
         'stage1.enverguner.com', 
         'prod1.enverguner.com'], 
@@ -63,3 +63,5 @@ node {
         }
     }
 }
+
+
